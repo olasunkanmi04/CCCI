@@ -1,0 +1,14 @@
+.nav {
+    &__item {
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: #ffffff;
+        }
+
+        em {
+            font-size: 30px !important;
+            font-weight: 500 !important;
+        }
+    }
+}
