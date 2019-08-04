@@ -608,7 +608,7 @@ body {
     padding-right: 2rem;
     padding-left: 2rem; } }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 473px) {
   .nav__body {
     padding: 20px; } }
 
@@ -671,14 +671,14 @@ body {
 .activity {
   background-color: #ffe9e9; }
   .activity__heading {
-    padding: 30px 0; }
+    padding-top: 20px;
+    padding-bottom: 0; }
     .activity__heading-text {
       font-size: 30px;
       font-weight: 700;
-      display: inline-block;
-      vertical-align: middle;
       color: #050401;
-      line-height: 45px; }
+      line-height: 45px;
+      text-align: center; }
   .activity__wrap {
     text-align: center;
     padding: 30px 0; }
@@ -1032,6 +1032,10 @@ body {
       font-size: 35px;
       line-height: 52.5px; } }
 
+@media screen and (max-width: 400px) {
+  .event {
+    padding: 40px 20px; } }
+
 .live__hero-bg {
   background-color: #FF7F50; }
 
@@ -1118,3 +1122,57 @@ body {
     padding: 20px; }
   .messages {
     padding: 0 20px 20px 20px; } }
+
+.contact {
+  background-color: #f6f6f6; }
+  .contact__hero-bg {
+    background-color: #122C34; }
+  .contact__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #050401; }
+  .contact__address-location, .contact__address-email, .contact__address-phone {
+    font-size: 15px;
+    color: rgba(5, 4, 1, 0.5);
+    margin-bottom: 3px;
+    line-height: 22.5px; }
+  .contact__address-phone {
+    margin-bottom: 8px; }
+  .contact__social a {
+    margin-right: 17px; }
+    .contact__social a:last-child {
+      margin-right: 0; }
+    .contact__social a:hover {
+      text-decoration: none; }
+      .contact__social a:hover svg {
+        fill: #FF7F50; }
+    .contact__social a svg {
+      width: 20px;
+      height: 20px;
+      fill: #bcbcbc; }
+  .contact__input {
+    border: none;
+    height: 50px;
+    font-size: 15px;
+    color: #050401; }
+    .contact__input::placeholder {
+      font-size: 12px;
+      color: #050401; }
+  .contact__textarea {
+    border: none;
+    font-size: 15px;
+    color: #050401; }
+    .contact__textarea::placeholder {
+      font-size: 12px;
+      color: #050401; }
+  .contact .cta-button {
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: auto; }
+
+@media screen and (max-width: 575px) {
+  .contact .col-12,
+  .contact .col-sm-12 {
+    padding: 0; } }

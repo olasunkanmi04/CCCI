@@ -1,0 +1,97 @@
+.contact {
+    background-color: #f6f6f6;
+
+    &__hero {
+        &-bg {
+            background-color: #122C34;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #050401;
+    }
+
+    &__address {
+
+        &-location,
+        &-email,
+        &-phone {
+            font-size: 15px;
+            color: rgba(#050401, 0.5);
+            margin-bottom: 3px;
+            line-height: 22.5px;
+        }
+
+        &-phone {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__social {
+        a {
+            margin-right: 17px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                svg {
+                    fill: #FF7F50;
+                }
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #bcbcbc;
+            }
+        }
+    }
+
+    &__input {
+        border: none;
+        height: 50px;
+        font-size: 15px;
+        color: #050401;
+
+        &::placeholder {
+            font-size: 12px;
+            color: #050401;
+        }
+    }
+
+    &__textarea {
+        border: none;
+        font-size: 15px;
+        color: #050401;
+
+        &::placeholder {
+            font-size: 12px;
+            color: #050401;
+        }
+    }
+
+    .cta-button {
+        padding: 10px 30px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (max-width:575px) {
+    .contact {
+
+        .col-12,
+        .col-sm-12 {
+            padding: 0;
+        }
+    }
+}
