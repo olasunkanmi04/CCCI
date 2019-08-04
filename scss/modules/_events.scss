@@ -1,0 +1,25 @@
+.event {
+    &__hero {
+        &-bg {
+            height: 200px;
+            background-color: #30BCED;
+        }
+    }
+}
+
+@media screen and (max-width:999px) {
+    .event__hero-bg {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .event__hero-text {
+        padding: 0 20px;
+
+        .home__hero-text {
+            font-size: 35px;
+            line-height: 52.5px;
+        }
+    }
+}

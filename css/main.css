@@ -584,14 +584,33 @@ body {
     box-shadow: none;
     border: 1px solid rgba(201, 201, 201, 0.58); }
 
-.nav__item svg {
-  width: 50px;
-  height: 50px;
-  fill: #ffffff; }
+.nav__body {
+  z-index: 1 !important;
+  padding: 20px 80px; }
+  .nav__body .nav-item.active .nav-link {
+    color: #ffffff !important; }
+  .nav__body .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 16px; }
+    .nav__body .nav-link:hover {
+      color: #ffffff !important; }
+  .nav__body .navbar-brand {
+    color: #ffffff; }
+  .nav__body .navbar-nav {
+    margin-left: auto; }
+  .nav__body .navbar-toggler {
+    border: none !important; }
+  .nav__body .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
-.nav__item em {
-  font-size: 30px !important;
-  font-weight: 500 !important; }
+@media screen and (min-width: 992px) {
+  .nav__body .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem; } }
+
+@media screen and (max-width: 399px) {
+  .nav__body {
+    padding: 20px; } }
 
 /* MODULES */
 .home__hero {
@@ -911,6 +930,10 @@ body {
   .social__streams {
     left: 2%; } }
 
+@media screen and (max-width: 831px) {
+  .social__icons {
+    left: 0; } }
+
 @media screen and (max-width: 780px) {
   .home__hero-text-wrap {
     width: 60%; } }
@@ -993,3 +1016,105 @@ body {
 @media screen and (max-width: 342px) {
   .meetPastor {
     padding: 30px 10px; } }
+
+.event__hero-bg {
+  height: 200px;
+  background-color: #30BCED; }
+
+@media screen and (max-width: 999px) {
+  .event__hero-bg {
+    height: 250px; } }
+
+@media screen and (max-width: 650px) {
+  .event__hero-text {
+    padding: 0 20px; }
+    .event__hero-text .home__hero-text {
+      font-size: 35px;
+      line-height: 52.5px; } }
+
+.live__hero-bg {
+  background-color: #FF7F50; }
+
+.live__wrap {
+  padding: 40px; }
+
+.live__video {
+  padding-right: 12px; }
+  .live__video h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #050401; }
+  .live__video-title {
+    margin-bottom: 10px !important; }
+  .live__video-event {
+    font-size: 14px;
+    color: #050401;
+    font-weight: 500; }
+  .live__video iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px; }
+  .live__video-preacher {
+    font-size: 14px;
+    color: rgba(5, 4, 1, 0.5);
+    font-weight: normal; }
+
+.live__audio {
+  padding-left: 12px; }
+  .live__audio h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #050401; }
+
+.messages {
+  padding: 40px;
+  padding-top: 0px; }
+  .messages__link {
+    margin-top: 10px;
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee; }
+    .messages__link a {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #FF7F50; }
+      .messages__link a:first-child {
+        color: red;
+        margin-right: auto; }
+        .messages__link a:first-child:hover svg {
+          fill: red; }
+      .messages__link a:hover {
+        text-decoration: none; }
+        .messages__link a:hover svg {
+          fill: #FF7F50; }
+      .messages__link a svg {
+        width: 15px;
+        height: 15px; }
+      .messages__link a span {
+        vertical-align: middle; }
+  .messages__audio {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  .messages .event__individual-detail {
+    margin-top: 0; }
+  .messages__title {
+    color: #050401;
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 40px; }
+
+@media screen and (max-width: 767px) {
+  .live__audio,
+  .live__video {
+    padding: 0; } }
+
+@media screen and (max-width: 400px) {
+  .live__wrap {
+    padding: 20px; }
+  .messages {
+    padding: 0 20px 20px 20px; } }

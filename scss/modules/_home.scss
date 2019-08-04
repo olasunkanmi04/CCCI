@@ -454,6 +454,12 @@
     }
 }
 
+@media screen and (max-width:831px) {
+    .social__icons {
+        left: 0;
+    }
+}
+
 @media screen and (max-width:780px) {
     .home__hero-text-wrap {
         width: 60%;

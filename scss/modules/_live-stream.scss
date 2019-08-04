@@ -1,0 +1,140 @@
+.live {
+    &__hero {
+        &-bg {
+            background-color: #FF7F50;
+        }
+    }
+
+    &__wrap {
+        padding: 40px;
+    }
+
+    &__video {
+        padding-right: 12px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #050401;
+        }
+
+        &-title {
+            margin-bottom: 10px !important;
+        }
+
+        &-event {
+            font-size: 14px;
+            color: #050401;
+            font-weight: 500;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        &-preacher {
+            font-size: 14px;
+            color: rgba(#050401, 0.5);
+            font-weight: normal;
+        }
+    }
+
+    &__audio {
+        padding-left: 12px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #050401;
+        }
+    }
+}
+
+.messages {
+    padding: 40px;
+    padding-top: 0px;
+
+    &__link {
+        margin-top: 10px;
+        display: flex;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eeeeee;
+
+        a {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #FF7F50;
+
+            &:first-child {
+                color: red;
+                margin-right: auto;
+
+                &:hover {
+                    svg {
+                        fill: red;
+                    }
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                svg {
+                    fill: #FF7F50;
+                }
+
+            }
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+
+            span {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__audio {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .event__individual-detail {
+        margin-top: 0;
+    }
+
+    &__title {
+        color: #050401;
+        font-weight: 600;
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+
+    .live__audio,
+    .live__video {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .live__wrap {
+        padding: 20px;
+    }
+
+    .messages {
+        padding: 0 20px 20px 20px;
+    }
+}
