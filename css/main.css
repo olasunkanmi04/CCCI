@@ -1176,3 +1176,98 @@ body {
   .contact .col-12,
   .contact .col-sm-12 {
     padding: 0; } }
+
+.meet {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto; }
+  .meet__hero-bg {
+    height: 200px;
+    background-color: #452103; }
+  .meet__heading {
+    color: #050401;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 27px; }
+  .meet__text {
+    color: #050401;
+    font-size: 15px;
+    line-height: 30px; }
+  .meet__vision {
+    padding: 40px;
+    width: 80%; }
+    .meet__vision h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      margin-bottom: 10px;
+      color: #ffffff; }
+    .meet__vision p {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 30px; }
+  .meet__mission {
+    margin-top: 40px; }
+    .meet__mission-wrap {
+      background: #151E3F;
+      height: fit-content; }
+      .meet__mission-wrap:nth-child(2) {
+        background: #18275f; }
+  .meet__pst-text {
+    padding: 30px 20px; }
+    .meet__pst-text p {
+      color: #050401;
+      font-size: 15px;
+      line-height: 30px; }
+      .meet__pst-text p img {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        float: left; }
+  .meet__pst-title {
+    color: #050401;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 27px;
+    text-align: center; }
+
+.gallery {
+  margin-top: 20px; }
+  .gallery__title {
+    color: #050401;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 27px;
+    text-align: center; }
+  .gallery__img {
+    height: 200px;
+    overflow: hidden; }
+
+.address {
+  margin-bottom: 20px; }
+  .address__map {
+    height: 400px;
+    width: 100%; }
+  .address__location {
+    padding: 40px; }
+
+@media screen and (max-width: 999px) {
+  .meet__hero-bg {
+    height: 250px; } }
+
+@media screen and (max-width: 600px) {
+  .meet {
+    width: 100%; } }
+
+@media screen and (max-width: 476px) {
+  .meet__vision {
+    width: 100%; }
+  .meet__pst-text p img {
+    float: none;
+    vertical-align: bottom; } }
+
+@media screen and (max-width: 350px) {
+  .address__location {
+    padding: 30px 20px; } }

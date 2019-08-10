@@ -1,0 +1,148 @@
+.meet {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    &__hero {
+        &-bg {
+            height: 200px;
+            background-color: #452103;
+        }
+    }
+
+    &__heading {
+        color: #050401;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 20px;
+        line-height: 27px;
+    }
+
+    &__text {
+        color: #050401;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    &__vision {
+        padding: 40px;
+        width: 80%;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 30px;
+
+        }
+    }
+
+    &__mission {
+        margin-top: 40px;
+
+        &-wrap {
+            background: #151E3F;
+            height: fit-content;
+
+            &:nth-child(2) {
+                background: #18275f;
+            }
+        }
+    }
+
+    &__pst {
+        &-text {
+            padding: 30px 20px;
+
+            p {
+                color: #050401;
+                font-size: 15px;
+                line-height: 30px;
+
+                img {
+                    margin-right: 15px;
+                    margin-bottom: 10px;
+                    float: left;
+                }
+            }
+        }
+
+        &-title {
+            color: #050401;
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 20px;
+            line-height: 27px;
+            text-align: center;
+        }
+    }
+}
+
+.gallery {
+    margin-top: 20px;
+
+    &__title {
+        color: #050401;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 30px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    &__img {
+        height: 200px;
+        overflow: hidden;
+    }
+}
+
+.address {
+    margin-bottom: 20px;
+
+    &__map {
+        height: 400px;
+        width: 100%;
+    }
+
+    &__location {
+        padding: 40px;
+
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .meet__hero-bg {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .meet {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .meet__vision {
+        width: 100%;
+    }
+
+    .meet__pst-text p img {
+        float: none;
+        vertical-align: bottom;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .address__location {
+        padding: 30px 20px;
+    }
+}
